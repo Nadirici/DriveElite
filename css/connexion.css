@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#F0EFEB ;
+}
+
+header {
+    background: #043646;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+.logo {
+    cursor: pointer;
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+.container {
+    text-align: center;
+}
+
+
+
+footer {
+    border-top: #F0EFEB;
+    background-color: #1B1B1B;
+    color: #F0EFEB;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Code Romain*/
+
+.inscrirebox,
+.connexionbox {
+    color: #F0EFEB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inscrirebox{
+    color: #F0EFEB;
+    width: 360px;
+    height: 480px;
+    margin: auto;
+    background-color: #043646 ;
+    border-radius: 10px;
+}
+
+.connexionbox{
+    color: #F0EFEB;
+    width: 360px;
+    height: 350px;
+    margin: auto;
+    background-color: #043646 ;
+    border-radius: 10px;
+}
+
+.connexionbox h1 {
+
+    text-align: center;
+    padding-top: 10px;
+
+  }
+
+h4 {
+
+    text-align: center;
+  }
+
+form {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+form label {
+
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  input[type="submit"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgba(110, 153, 202);
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05); 
+}
+
+input[type="submit"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+  }
+
+p {
+    text-align: center;
+    font-size: 13px;
+    color : white;
+  }
+
+.para-2 a {
+    color: #49c1a2;
+  }
+
+.logo {
+    width: 450px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

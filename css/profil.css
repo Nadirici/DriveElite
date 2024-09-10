@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+
+.navbar .li,.navbar a, .navbar button{
+   font-family: "Monteserrat",sans-serif; 
+   font-weight: 500;
+   font-size: 16px;
+   color: #ECECEC;
+   text-decoration: none;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #043646, rgba(110, 153, 202));
+    font-family: "Montserrat", sans-serif;
+    min-width: 320px;
+}
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.formulaire-en-lui-meme {
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 2px solid #283618;
+    height: auto;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #F0EFEB;
+}
+
+.logo {
+    cursor: pointer;
+    max-width: 200px; /* You can adjust the value to your preference */
+    height: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #B7B7A4;
+}
+
+ button{
+    padding:10px 25px;
+    background-color:#F0EFEB ;
+    border: 2px solid #F0EFEB ;
+    color: #283618;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+ button:hover{
+    background-color: #043646;
+    color: #F0EFEB;
+    
+}
+
+
+.container {
+    border-top: 2px solid #F0EFEB;
+    width: 100%;
+
+    min-height:calc(100vh - (header height + footer height)); 
+
+    display: flex;
+
+    justify-content: space-between;
+    background: transparent;
+}
+
+
+.body-form {
+    flex: 0.85; /* Adjust the flex value to control the width of body-form */
+    width: 100%;
+
+    border-left: 3px solid #F0EFEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to top,#D4D4D4,#F0EFEB); 
+    padding: 50px;
+    
+}
+
+.formulaire-en-lui-meme {
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 2px solid #283618;
+    height: auto;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #F0EFEB;
+}
+
+.formulaire-en-lui-meme .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    padding-top: 8%;
+}
+
+.formulaire-en-lui-meme .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #283618;
+}
+
+
+.formulaire-en-lui-meme form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30%;
+    padding-top: 15%;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #283618;
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .gender-category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .gender-category label {
+    display: flex;
+    align-items: center;
+    margin-right: 5px ;
+}
+
+.gender-details .gender-category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked~.gender-category label .one,
+#dot-2:checked~.gender-category label .two {
+    border-color: #d9d9d9;
+    background: #283618;
+}
+
+
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+
+/* .user-details .input-box select option:first-child {
+    display: none;
+} */
+
+.user-details .input-box select:focus,
+.user-details .input-box select:valid {
+    border-color: #283618;
+}
+
+
+
+.user-details .input-box.profession-box {
+    width: calc(100% - 20px); /* Adjust the width as needed */
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .gender-details .gender-category {
+        width: 100%;
+    }
+
+    .formulaire-en-lui-meme form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+
+
+.LeftMenu {
+    flex: 0.15;
+    background:transparent;
+    color: #F0EFEB;
+
+    height: auto; 
+
+    margin-top: 10%; 
+    
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 50%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+    background-color: #1B1B1B;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style pour le premier élément du menu (Menu) */
+#menu {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style pour les liens du menu */
+.links {
+    border-bottom: 1px solid #F0EFEB; /* Ligne de séparation entre les liens */
+}
+
+
+
+footer {
+    border-top: #F0EFEB;
+    background-color: #1B1B1B;
+    color: #F0EFEB;
+    text-align: center;
+    padding: 10px;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+/* CSS pour la scrollbar */
+/* Barre de défilement principale */
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track - la zone grise autour de la barre de défilement */
+body::-webkit-scrollbar-track {
+    background: #F0EFEB; /* Couleur du fond du track */
+}
+
+/* Handle - la barre de défilement elle-même */
+body::-webkit-scrollbar-thumb {
+    background: #283618; /* Couleur de la barre de défilement */
+    border-radius: 6px; /* Coins arrondis de la barre de défilement */
+}
+
+/* Corner - l'angle entre la barre de défilement verticale et horizontale */
+body::-webkit-scrollbar-corner {
+    background: #F0EFEB; /* Couleur du coin */
+}
+
+/* Pseudo-élément pour le bouton de défilement vers le haut (flèche) */
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Pseudo-élément pour le bouton de défilement vers le bas (flèche) */
+body::-webkit-scrollbar-button:vertical:end {
+    display: none;
+}
+
